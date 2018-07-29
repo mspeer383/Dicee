@@ -12,7 +12,18 @@
 		DE4609BF20FF9BD700E2B49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4609BD20FF9BD700E2B49B /* Main.storyboard */; };
 		DE4609C120FF9BD800E2B49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4609C020FF9BD800E2B49B /* Assets.xcassets */; };
 		DE4609C420FF9BD800E2B49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4609C220FF9BD800E2B49B /* LaunchScreen.storyboard */; };
+		DE4609D22100DFC300E2B49B /* DiceeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4609D12100DFC300E2B49B /* DiceeTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE4609D42100DFC300E2B49B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE4609AE20FF9BD700E2B49B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE4609B520FF9BD700E2B49B;
+			remoteInfo = Dicee;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DE4609B620FF9BD700E2B49B /* Dicee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicee.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		DE4609C020FF9BD800E2B49B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4609C320FF9BD800E2B49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE4609C520FF9BD800E2B49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE4609CF2100DFC300E2B49B /* DiceeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4609D12100DFC300E2B49B /* DiceeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceeTests.swift; sourceTree = "<group>"; };
+		DE4609D32100DFC300E2B49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DE4609B320FF9BD700E2B49B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE4609CC2100DFC300E2B49B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				DE4609B820FF9BD700E2B49B /* Dicee */,
+				DE4609D02100DFC300E2B49B /* DiceeTests */,
 				DE4609B720FF9BD700E2B49B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				DE4609B620FF9BD700E2B49B /* Dicee.app */,
+				DE4609CF2100DFC300E2B49B /* DiceeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				DE4609C520FF9BD800E2B49B /* Info.plist */,
 			);
 			path = Dicee;
+			sourceTree = "<group>";
+		};
+		DE4609D02100DFC300E2B49B /* DiceeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE4609D12100DFC300E2B49B /* DiceeTests.swift */,
+				DE4609D32100DFC300E2B49B /* Info.plist */,
+			);
+			path = DiceeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = DE4609B620FF9BD700E2B49B /* Dicee.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DE4609CE2100DFC300E2B49B /* DiceeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE4609D62100DFC300E2B49B /* Build configuration list for PBXNativeTarget "DiceeTests" */;
+			buildPhases = (
+				DE4609CB2100DFC300E2B49B /* Sources */,
+				DE4609CC2100DFC300E2B49B /* Frameworks */,
+				DE4609CD2100DFC300E2B49B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE4609D52100DFC300E2B49B /* PBXTargetDependency */,
+			);
+			name = DiceeTests;
+			productName = DiceeTests;
+			productReference = DE4609CF2100DFC300E2B49B /* DiceeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					DE4609B520FF9BD700E2B49B = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					DE4609CE2100DFC300E2B49B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DE4609B520FF9BD700E2B49B;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				DE4609B520FF9BD700E2B49B /* Dicee */,
+				DE4609CE2100DFC300E2B49B /* DiceeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE4609CD2100DFC300E2B49B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE4609CB2100DFC300E2B49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE4609D22100DFC300E2B49B /* DiceeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE4609D52100DFC300E2B49B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE4609B520FF9BD700E2B49B /* Dicee */;
+			targetProxy = DE4609D42100DFC300E2B49B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DE4609BD20FF9BD700E2B49B /* Main.storyboard */ = {
@@ -310,6 +388,46 @@
 			};
 			name = Release;
 		};
+		DE4609D72100DFC300E2B49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VL78QVH379;
+				INFOPLIST_FILE = DiceeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.speer.DiceeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dicee.app/Dicee";
+			};
+			name = Debug;
+		};
+		DE4609D82100DFC300E2B49B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VL78QVH379;
+				INFOPLIST_FILE = DiceeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.speer.DiceeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dicee.app/Dicee";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +445,15 @@
 			buildConfigurations = (
 				DE4609C920FF9BD800E2B49B /* Debug */,
 				DE4609CA20FF9BD800E2B49B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE4609D62100DFC300E2B49B /* Build configuration list for PBXNativeTarget "DiceeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE4609D72100DFC300E2B49B /* Debug */,
+				DE4609D82100DFC300E2B49B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
